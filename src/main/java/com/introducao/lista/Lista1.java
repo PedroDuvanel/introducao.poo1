@@ -21,6 +21,7 @@ public class Lista1 {
         System.out.println("Este é o resultado: " + resultado);
 
     }
+    
 
     public void ex02(){
 
