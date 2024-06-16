@@ -85,5 +85,32 @@ public class Lista1 {
 
     }
 
-    
+    public void ex05() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int comprimento;
+        int largura;
+        int area;
+        int valorm2;
+
+        System.out.println("Olá usuário!");
+        System.out.println("Qual o comprimento do terreno? ");
+        comprimento = scanner.nextInt();
+
+        System.out.println("Qual a largura do terreno? ");
+        largura = scanner.nextInt();
+
+        area = comprimento * largura;
+
+        System.out.println("Qual o valor do M2 na sua região? ");
+        valorm2 = scanner.nextInt();
+
+        int valorInteiro = area * valorm2;
+
+        System.out.println("O valor do terreno será de aproximadamente: " + valorInteiro + "R$");
+
+        scanner.close();
+
+    }
 }
