@@ -14,7 +14,10 @@ public class ListaApplication {
 		Lista1 lista2 = new Lista1();
 		lista2.ex02();
 
+        Lista1 lista3 = new Lista1();
+		lista3.ex03();
 
+		
 
 	}
 

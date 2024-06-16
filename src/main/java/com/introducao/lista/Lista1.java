@@ -3,7 +3,7 @@ package com.introducao.lista;
 import java.util.Scanner;
 
 public class Lista1 {
-    
+
     public void ex01() {
 
         Scanner scanner = new Scanner(System.in);
@@ -43,4 +43,22 @@ public class Lista1 {
         scanner.close();
     }
 
+    public void ex03() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double valor1;
+        double resultado;
+
+        System.out.println("Olá usuario!");
+        System.out.println("Digite um valor para ser convertido em dolar: ");
+        valor1 = scanner.nextDouble();
+
+        resultado = valor1 / 5.25;
+
+        System.out.println("O valor convertido será de: " + resultado + " $");
+
+        scanner.close();
+
+    }
 }
