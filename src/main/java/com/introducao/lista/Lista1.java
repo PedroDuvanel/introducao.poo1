@@ -61,4 +61,29 @@ public class Lista1 {
         scanner.close();
 
     }
+
+    public void ex04() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int num1;
+        int sucessor;
+        int antecessor;
+
+        System.out.println("Olá, usuário!");
+        System.out.println("Digite um numero para descobrir seu sucessor e antecessor: ");
+        num1 = scanner.nextInt();
+
+        sucessor = num1 + 1;
+        antecessor = num1 - 1;
+
+        System.out.println("O sucessor de" + " " + num1 + " " + "é" + " " + sucessor);
+
+        System.out.println("O antecessor de" + " " + num1 + " " + "é" + " " + antecessor);
+
+        scanner.close();
+
+    }
+
+    
 }
