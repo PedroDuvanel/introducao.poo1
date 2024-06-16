@@ -7,8 +7,15 @@ public class ListaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ListaApplication.class, args);
+
 		Lista1 lista = new Lista1();
 		lista.ex01();
+
+		Lista1 lista2 = new Lista1();
+		lista2.ex02();
+
+
+
 	}
 
 

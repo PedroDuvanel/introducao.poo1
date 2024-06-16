@@ -3,6 +3,7 @@ package com.introducao.lista;
 import java.util.Scanner;
 
 public class Lista1 {
+    
     public void ex01() {
 
         Scanner scanner = new Scanner(System.in);
@@ -20,12 +21,26 @@ public class Lista1 {
 
         System.out.println("Este é o resultado: " + resultado);
 
+        scanner.close();
+
     }
-    
 
-    public void ex02(){
+    public void ex02() {
 
+        Scanner scanner = new Scanner(System.in);
+        String nome;
+        String sobrenome;
+
+        System.out.println("Olá, usuário!");
+        System.out.println("Qual o seu nome? ");
+        nome = scanner.nextLine();
+
+        System.out.println("Qual o seu sobrenome? ");
+        sobrenome = scanner.nextLine();
+
+        System.out.println("Olá," + nome + " " + sobrenome + "!");
         
+        scanner.close();
     }
 
 }
