@@ -170,7 +170,23 @@ public class Lista1 {
 
     }
 
-    
+    public void ex08() {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        float fahrenheit;
+        float resultado;
+
+        System.out.println("Digite a temperatura em fahrenheit: ");
+        fahrenheit = scanner.nextFloat();
+
+        resultado = (fahrenheit - 32) * 5/9;
+
+        System.out.println("O valor em graus celsius é de: " + resultado);
+
+        scanner.close();
+
+    }
 
 }
 

@@ -1,6 +1,7 @@
 package com.introducao.lista;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.w3c.dom.ls.LSException;
 
 @SpringBootApplication
 public class ListaApplication {
@@ -29,8 +30,9 @@ public class ListaApplication {
 		Lista1 lista7 = new Lista1();
 		lista7.ex07();
 
-		
-		
+		Lista1 lista8 = new Lista1();
+		lista8.ex08();
+
 
 	}
 
