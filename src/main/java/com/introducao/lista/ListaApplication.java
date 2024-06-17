@@ -26,6 +26,9 @@ public class ListaApplication {
 		Lista1 lista6 = new Lista1();
 		lista6.ex06();
 
+		Lista1 lista7 = new Lista1();
+		lista7.ex07();
+
 		
 		
 

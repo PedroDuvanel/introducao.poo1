@@ -138,6 +138,39 @@ public class Lista1 {
 
 	}
     
+    public void ex07() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int nota1;
+        int nota2;
+        int nota3;
+        int nota4;
+        int media;
+
+        System.out.println("Olá usuário!");
+        System.out.println("Insira uma nota! ");
+        nota1 = scanner.nextInt();
+
+        System.out.println("Insira uma segunda nota! ");
+        nota2 = scanner.nextInt();
+
+        System.out.println("Insira uma terceira nota! ");
+        nota3 = scanner.nextInt();
+
+        System.out.println("Insira uma quarta nota! ");
+        nota4 = scanner.nextInt();
+
+        media = nota1 + nota2 + nota3 + nota4 / 4;
+
+        System.out.println("A média aritméca dessas quatro notas será: " + media);
+
+        scanner.close();
+
+
+    }
+
+    
 
 }
 
