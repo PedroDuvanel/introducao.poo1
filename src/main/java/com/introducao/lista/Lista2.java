@@ -59,4 +59,69 @@ public class Lista2 {
         scanner.close();
 
     }
+
+    public void ex03(){
+        Scanner scanner = new Scanner(System.in);
+
+        String resposta1;
+        String resposta2 = "";
+        String resposta3 = "";
+
+        System.out.println("Olá, bem-vindo(a) ao banco!");
+
+        System.out.println("Você possui mais de 65 anos? S/N");
+        resposta1 = scanner.nextLine();
+
+        if (resposta1.equalsIgnoreCase("S")) {
+            System.out.println("Vá para a fila preferencial!");
+        } else {
+            System.out.println("Você possui alguma deficiência? S/N");
+            resposta2 = scanner.nextLine();
+
+            if (resposta2.equalsIgnoreCase("S")) {
+                System.out.println("Vá para a fila preferencial!");
+            } else {
+                System.out.println("Você é gestante? S/N");
+                resposta3 = scanner.nextLine();
+
+                if (resposta3.equalsIgnoreCase("S")) {
+                    System.out.println("Vá para a fila preferencial!");
+                } else {
+                    System.out.println("Vá para a fila comum!");
+                }
+            }
+        }
+
+        scanner.close();
+    }
+
+    public void ex04(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        int idade;
+
+        System.out.println("Olá,Bem vindo(a) ao evento,Qual a sua idade?");
+        idade = scanner.nextInt();
+
+        if(idade > 18){
+
+            System.out.println("Voce pode entrar!");
+
+        } else if(idade == 16 || idade == 17){
+
+            System.out.println("Apenas com responsável!");
+
+        } else {
+
+            System.out.println("Voce não pode entrar!");
+
+        }
+
+        scanner.close();
+
+    }
+
 }
+
+
