@@ -56,7 +56,7 @@ public class Lista1 {
 
         resultado = valor1 / 5.25;
 
-        System.out.println("O valor convertido será de: " + resultado + " $");
+        System.out.printf("O valor em dólares é: $%.2f\n", resultado);
 
         scanner.close();
 
@@ -142,26 +142,26 @@ public class Lista1 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int nota1;
-        int nota2;
-        int nota3;
-        int nota4;
-        int media;
+        double nota1;
+        double nota2;
+        double nota3;
+        double nota4;
+        double media;
 
         System.out.println("Olá usuário!");
         System.out.println("Insira uma nota! ");
-        nota1 = scanner.nextInt();
+        nota1 = scanner.nextDouble();
 
         System.out.println("Insira uma segunda nota! ");
-        nota2 = scanner.nextInt();
+        nota2 = scanner.nextDouble();
 
         System.out.println("Insira uma terceira nota! ");
-        nota3 = scanner.nextInt();
+        nota3 = scanner.nextDouble();
 
         System.out.println("Insira uma quarta nota! ");
-        nota4 = scanner.nextInt();
+        nota4 = scanner.nextDouble();
 
-        media = nota1 + nota2 + nota3 + nota4 / 4;
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
 
         System.out.println("A média aritméca dessas quatro notas será: " + media);
 
@@ -174,11 +174,11 @@ public class Lista1 {
 
         Scanner scanner = new Scanner(System.in);
         
-        float fahrenheit;
-        float resultado;
+        double fahrenheit;
+        double resultado;
 
         System.out.println("Digite a temperatura em fahrenheit: ");
-        fahrenheit = scanner.nextFloat();
+        fahrenheit = scanner.nextDouble();
 
         resultado = (fahrenheit - 32) * 5/9;
 

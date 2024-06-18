@@ -11,29 +11,7 @@ public class ListaApplication {
 
 		Lista1 lista = new Lista1();
 		lista.ex01();
-
-		Lista1 lista2 = new Lista1();
-		lista2.ex02();
-
-        Lista1 lista3 = new Lista1();
-		lista3.ex03();
-
-		Lista1 lista4 = new Lista1();
-		lista4.ex04();
-
-		Lista1 lista5 = new Lista1();
-		lista5.ex05();
-
-		Lista1 lista6 = new Lista1();
-		lista6.ex06();
-
-		Lista1 lista7 = new Lista1();
-		lista7.ex07();
-
-		Lista1 lista8 = new Lista1();
-		lista8.ex08();
-
-
+		
 	}
 
 
