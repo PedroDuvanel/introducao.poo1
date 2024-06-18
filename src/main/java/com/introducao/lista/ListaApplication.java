@@ -14,5 +14,12 @@ public class ListaApplication {
 		
 	}
 
+	public static void main(String[] args) {
+		SpringApplication.run(ListaApplication.class, args);
+
+		Lista2 lista02 = new Lista2();
+		lista02.ex01();
+		
+	}
 
 }
