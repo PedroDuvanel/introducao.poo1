@@ -165,7 +165,62 @@ public class Lista2 {
         
         }
 
+    public void ex06(){ 
         
+        Scanner scanner = new Scanner(System.in);
+
+        float nota1;
+        float nota2;
+        float media;
+        float recuperacao = 0;
+    
+        System.out.println("Olá aluno!");
+        System.out.println("---------------------------");
+    
+        System.out.println("Digite sua nota na primeira prova: ");
+        nota1 = scanner.nextFloat();
+    
+        System.out.println("Digite sua nota na segunda prova: ");
+        nota2 = scanner.nextFloat();
+
+        media = (nota1 + nota2) /2;
+    
+        if(media >= 6 ){
+    
+            System.out.println(" Parabéns! voce está aprovado!");
+    
+        } else {
+    
+            System.out.printf("nota media: %.2f \n", media) ;
+            System.out.println("Digite a nota de recuperação! ");
+            recuperacao = scanner.nextFloat();
+    
+        } 
+      
+        if ((nota1 > nota2) && (recuperacao > nota2)){
+
+            media = (nota1 + recuperacao) /2;
+
+        }else if((nota2 > nota1) && (recuperacao > nota1)){
+    
+            media = (nota2 + recuperacao) /2;
+    
+        } 
+    
+        if (media >= 6){
+    
+        System.out.printf("Parabéns,voce está aprovado! media final de: %.2f \n", media);
+    
+    
+        }else {
+    
+            System.out.printf("Voce está reprovado!, media final de: %.2f \n", media);
+    
+        }
+
+        scanner.close();
     }
+}
+    
 
-
+      
