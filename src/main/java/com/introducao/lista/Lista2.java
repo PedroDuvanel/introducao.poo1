@@ -220,6 +220,39 @@ public class Lista2 {
 
         scanner.close();
     }
+
+    public void ex07(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        int dividendo;
+        int divisor;
+        float resultado;
+        float resto;
+
+        System.out.println("Digite um numero para realizar a divisão: ");
+        dividendo = scanner.nextInt();
+
+        System.out.println("Insira um divisor: " );
+        divisor = scanner.nextInt();
+
+        resto = dividendo % divisor;
+        resultado = dividendo / divisor;
+
+        if(resto == 0){
+
+            System.out.println(dividendo + " é divisivel por: " + divisor);
+
+        } else {
+
+            System.out.println(dividendo + " não é divisivel por " + divisor + ", O resultado seria: " + resultado);
+        }
+
+        scanner.close();
+
+    }
+
+    
 }
     
 

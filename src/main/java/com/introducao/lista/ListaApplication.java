@@ -18,8 +18,8 @@ public class ListaApplication {
 		SpringApplication.run(ListaApplication.class, args);
 
 		Lista2 lista02 = new Lista2();
-		lista02.ex06();
-		
+		lista02.ex07();
+
 	} 
 
 }
