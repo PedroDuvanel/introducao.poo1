@@ -252,7 +252,89 @@ public class Lista2 {
 
     }
 
-    
+    public void ex08(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        int resposta1;
+        int resposta2;
+        int resposta3;
+        int resposta4;
+        int resposta5;
+        int chances = 3;
+
+        System.out.println("Quem foi eleito mais vezes melhor jogador do mundo? ");
+        System.out.println("1) messi");
+        System.out.println("2) pelé");
+        System.out.println("3) zé ricardo");
+        resposta1 = scanner.nextInt();
+
+        if(resposta1 != 1){
+
+            chances --;
+
+        }
+
+        System.out.println("Qual a capital do Brasil? ");
+        System.out.println("1) Rio de janeiro");
+        System.out.println("2) Minas gerais");
+        System.out.println("3) Brasilia");
+        resposta2 = scanner.nextInt();
+
+        if(resposta2 != 3){
+
+            chances --;
+
+        }
+
+        System.out.println("Qual o unico time do rio que tem mundial? ");
+        System.out.println("1) fluminense");
+        System.out.println("2) vasco");
+        System.out.println("3) flamengo");
+        resposta3 = scanner.nextInt();
+
+        if (chances == 0){
+
+            System.out.println("Voce perdeu!");
+
+        } else{
+
+        if(resposta3 != 3){
+
+            chances --;
+
+            }
+        }
+
+        System.out.println("Qual personagem foi picado por uma aranha? ");
+        System.out.println("1) homem aranha");
+        System.out.println("2) batman");
+        System.out.println("3) super homem");
+        resposta4 = scanner.nextInt();
+
+        if(chances == 0){
+
+            System.out.println("Voce perdeu!");
+
+        }else{
+            
+            if (resposta4 != 1){
+
+            chances --;
+
+        }
+
+        System.out.println("Quem é o idolo da libertadores de 2019 do flamengo?  ");
+        System.out.println("1) gabigol");
+        System.out.println("2) pelé");
+        System.out.println("3) zé ricardo");
+        resposta5 = scanner.nextInt();
+
+        scanner.close();
+
+      }
+
+    }
 }
     
 
