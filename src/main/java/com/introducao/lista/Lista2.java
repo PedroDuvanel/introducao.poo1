@@ -122,6 +122,50 @@ public class Lista2 {
 
     }
 
-}
+    public void ex05(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        String emailDigitado;
+        String senhaDigitada;
+
+        System.out.println("Olá usuario");
+        System.out.println("--------------------------------");
+        System.out.println("Digite seu email: ");
+        emailDigitado = scanner.nextLine();
+
+        System.out.println("Digite sua senha: ");
+        senhaDigitada = scanner.nextLine();
+
+        String email = "pedro@pedro";
+        String senha = "1234";
+
+        if(emailDigitado.equals(email) && senhaDigitada.equals(senha)) {
+
+            System.out.println("Login efetuado!");
+
+        } else {
+            
+            if (!emailDigitado.equals(email) && !senhaDigitada.equals(senha)) {
+
+            System.out.println("email e senhas incorretos!");
+
+            } else if (!emailDigitado.equals(email)){
+
+                System.out.println("Email incorreto!");
+
+            }else{
+
+                System.out.println("senha incorreta!");
+            }
+
+            scanner.close();
+
+            }  
+        
+        }
+
+        
+    }
 
 
