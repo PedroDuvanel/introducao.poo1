@@ -13,13 +13,15 @@ public class Lista2 {
         System.out.println("Escreva um numero: ");
         numero = scanner.nextInt();
 
-        if (numero %2 == 0) {
+        if (numero == 0) {
             
-            System.out.println("o numero é par!");
+            System.out.println("o numero é zero!");
 
-        }
+        } else if (numero %2 == 0){
+           
+            System.out.println("O numero é par!");
 
-        else {
+        }else {
 
             System.out.println("O numero é impar!");
 
@@ -108,7 +110,7 @@ public class Lista2 {
 
             System.out.println("Voce pode entrar!");
 
-        } else if(idade == 16 || idade == 17){
+        } else if(idade < 18 && idade >= 16){
 
             System.out.println("Apenas com responsável!");
 
@@ -169,19 +171,19 @@ public class Lista2 {
         
         Scanner scanner = new Scanner(System.in);
 
-        float nota1;
-        float nota2;
-        float media;
-        float recuperacao = 0;
+        double nota1;
+        double nota2;
+        double media;
+        double recuperacao = 0;
     
         System.out.println("Olá aluno!");
         System.out.println("---------------------------");
     
         System.out.println("Digite sua nota na primeira prova: ");
-        nota1 = scanner.nextFloat();
+        nota1 = scanner.nextDouble();
     
         System.out.println("Digite sua nota na segunda prova: ");
-        nota2 = scanner.nextFloat();
+        nota2 = scanner.nextDouble();
 
         media = (nota1 + nota2) /2;
     
@@ -193,7 +195,7 @@ public class Lista2 {
     
             System.out.printf("nota media: %.2f \n", media) ;
             System.out.println("Digite a nota de recuperação! ");
-            recuperacao = scanner.nextFloat();
+            recuperacao = scanner.nextDouble();
     
         } 
       
