@@ -14,11 +14,19 @@ public class ListaApplication {
 		
 	} */
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		SpringApplication.run(ListaApplication.class, args);
 
 		Lista2 lista02 = new Lista2();
 		lista02.ex01();
+
+	} */
+
+	public static void main(String[] args) {
+		SpringApplication.run(ListaApplication.class, args);
+
+		Lista3 lista03 = new Lista3();
+		lista03.ex01();
 
 	} 
 
