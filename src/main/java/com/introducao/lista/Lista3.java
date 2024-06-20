@@ -179,6 +179,33 @@ public class Lista3 {
         scanner.close();
     }
 
-    
+    public void ex06() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int escolha;
+
+        System.out.println("Escolha o numero de linhas da piramide: ");
+        escolha = scanner.nextInt();
+
+        for (int i = 1 ; i <= escolha ; i++){
+            for(int j = 1 ; j <= escolha - i; j++) {
+
+           System.out.print("  ");
+
+            }
+        for (int k = 1; k <= 2 * i - 1; k++ ) {  
+
+            System.out.print("* ");
+            
+        }
+
+        System.out.println();
+
+        scanner.close();
+
+        }
+
+    }
 
 }
