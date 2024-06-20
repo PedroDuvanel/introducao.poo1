@@ -26,7 +26,7 @@ public class ListaApplication {
 		SpringApplication.run(ListaApplication.class, args);
 
 		Lista3 lista03 = new Lista3();
-		lista03.ex04();
+		lista03.ex05();
 
 	} 
 
