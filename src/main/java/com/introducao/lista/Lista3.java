@@ -208,4 +208,34 @@ public class Lista3 {
 
     }
 
+    public void ex07(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        int altura;
+        int largura;
+
+        System.out.println("-------------------------------------------------");
+
+        System.out.println("Qual a altura do retangulo que iremos construir? ");
+        altura = scanner.nextInt();
+
+        System.out.println("-------------------------------------------------");
+
+        System.out.println("Qual a largura do retangulo que iremos construir? ");
+        largura = scanner.nextInt();
+
+        System.out.println("--------------------------------------------------");
+
+        for (int i = 1; i <= altura; i++) {
+            for (int j = 1; j <= largura; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+
+    }
+
 }
