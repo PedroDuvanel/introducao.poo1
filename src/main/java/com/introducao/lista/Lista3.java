@@ -208,7 +208,7 @@ public class Lista3 {
 
     }
 
-    public void ex07(){
+    public void ex07() {
 
         Scanner scanner = new Scanner(System.in);
 

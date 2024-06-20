@@ -6,28 +6,33 @@ import org.w3c.dom.ls.LSException;
 @SpringBootApplication
 public class ListaApplication {
 
-	/*public static void main(String[] args) {
-		SpringApplication.run(ListaApplication.class, args);
-
-		Lista1 lista = new Lista1();
-		lista.ex01();
-		
-	} */
-
-	/*public static void main(String[] args) {
-		SpringApplication.run(ListaApplication.class, args);
-
-		Lista2 lista02 = new Lista2();
-		lista02.ex01();
-
-	} */
-
 	public static void main(String[] args) {
 		SpringApplication.run(ListaApplication.class, args);
 
+		limpa_windows();
+
 		Lista3 lista03 = new Lista3();
-		lista03.ex07();
+		lista03.ex03();
+
+		finaliza();
+
 
 	} 
+
+	static void limpa_windows() {
+		try {
+            if (System.getProperty("os.name").contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                System.out.println("Este comando só funciona no Windows.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+	static void finaliza() {
+		System.out.println("\n\n\n\n");
+	}
 
 }
