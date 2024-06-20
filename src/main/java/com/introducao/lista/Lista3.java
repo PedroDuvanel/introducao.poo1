@@ -1,5 +1,7 @@
 package com.introducao.lista;
 
+import java.util.Random;
+
 import java.util.Scanner;
 
 public class Lista3 {
@@ -102,6 +104,44 @@ public class Lista3 {
 
         }
 
+    public void ex04(){
+
+            Scanner scanner = new Scanner(System.in);
+            Random random = new Random();
+    
+            int num1;
+            int randomNumber = random.nextInt(101); 
+    
+            System.out.println("------- JOGO DA ADIVINHAÇÃO -------");
+            System.out.println("----------------------------------");
+    
+            System.out.println("Escolha um número de 1 a 100: ");
+            num1 = scanner.nextInt();
+    
+            System.out.println("----------------------------------");
+            System.out.println("Tente adivinhar o número!");
+    
+            while (num1 != randomNumber) {
+                if (Math.abs(randomNumber - num1) <= 5) {
+                    System.out.println("Está quase lá!");
+                } else if (Math.abs(randomNumber - num1) <= 15) {
+                    System.out.println("Está quente! Tente um número " + (num1 < randomNumber ? "maior." : "menor."));
+                } else {
+                    System.out.println("Está frio! Tente um número " + (num1 < randomNumber ? "maior." : "menor."));
+                }
+                num1 = scanner.nextInt();
+            }
+    
+            System.out.println("Parabéns! Você acertou o número " + randomNumber + "!");
+            
+            scanner.close();
+        }
+
+    public void ex05(){
+
+        
+
+    }
 }
 
 
