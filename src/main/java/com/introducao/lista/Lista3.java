@@ -66,4 +66,42 @@ public class Lista3 {
 
 
     }
+
+    public void ex03(){
+
+        Scanner scanner = new Scanner(System.in);
+        
+        int num1;
+        int num2;
+
+        System.out.println("Escreva um numero: ");
+        num1 = scanner.nextInt();
+
+        System.out.println("Escreva outro numero que seja maior que o primeiro : ");
+        num2 = scanner.nextInt();
+
+        while (num2 <= num1) {
+            System.out.println("O segundo número deve ser maior que o primeiro.");
+            System.out.println("Escreva novamente o segundo número: ");
+            num2 = scanner.nextInt();
+        }
+
+        System.out.println("Os numeros pares no intervalo de " + num1 + " e " + num2 + " são: ");
+
+        for(int i = num1 ; i <= num2 ; i ++ ){
+
+            if(i % 2 == 0){
+
+                System.out.println(i);
+
+            }
+
+        }
+
+        scanner.close();
+
+        }
+
 }
+
+
