@@ -11,8 +11,8 @@ public class ListaApplication {
 
 		limpa_windows();
 
-		Lista3 lista03 = new Lista3();
-		lista03.ex05();
+		Lista4 lista04 = new Lista4();
+		lista04.ex01();
 
 		finaliza();
 
