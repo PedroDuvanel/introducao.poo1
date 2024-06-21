@@ -15,7 +15,7 @@ public class Lista3 {
         System.out.println("Escolha um número entre 1 e 59: ");
         escolha = scanner.nextInt();
 
-        while ((escolha > 59) && (escolha < 1)) {
+        while ((escolha > 59) || (escolha < 1)) {
 
             System.out.println("Escolha um número entre 1 e 59: ");
             escolha = scanner.nextInt();
