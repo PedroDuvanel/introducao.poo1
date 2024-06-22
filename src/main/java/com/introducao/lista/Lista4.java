@@ -6,8 +6,6 @@ public class Lista4 {
 
     public void ex01(){
 
-        Scanner scanner = new Scanner(System.in);
-
         int[] vendas = { 10, 13, 9, 80, 140, 30, 20, 25, 90, 80, 110, 150 };
         int valor = 0;
 
@@ -21,13 +19,9 @@ public class Lista4 {
 
         System.out.println("O numero de vendas totais do dia é: " + valor + "R$");
 
-        scanner.close();
-
     }
 
     public void ex02(){
-
-        Scanner scanner = new Scanner(System.in);
 
         int[] vendas = { 10, 13, 9, 80, 140, 30, 20, 25, 90, 80, 110, 150 };
         int menorValor = vendas[0];
@@ -60,9 +54,6 @@ public class Lista4 {
 
         System.out.println("O maior valor é: " + maiorValor + " R$ ");
 
-        scanner.close();
-
-
     } 
 
     public void ex03(){
@@ -87,8 +78,30 @@ public class Lista4 {
 
     }
 
+    public void ex04(){
+
+        int [] lista = { 3, 5, 6, 7, 8, 10, 22, 55, 110 };
+        int par = 0;
+
+        for (int i = 0 ; i < lista.length ; i++){  
+
+            if( i % 2 == 0){
+
+                par++;
+
+            }
+
+        }
+
+        System.out.println("A quantidade de números pares é: " + par);
+
+    }
+
+    public void ex05(){
 
 
+
+    }
 }
 
 
