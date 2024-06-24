@@ -12,7 +12,7 @@ public class ListaApplication {
 		limpa_windows();
 
 		Lista4 lista04 = new Lista4();
-		lista04.ex05();
+		lista04.ex06();
 
 		finaliza();
 

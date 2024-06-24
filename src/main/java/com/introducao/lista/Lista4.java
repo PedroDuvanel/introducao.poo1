@@ -142,7 +142,69 @@ public class Lista4 {
 
     public void ex06() {
 
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> lista = new ArrayList<>();
+        int opcao;
+
+        System.out.println("------Bem vindos ao supermarket!-------");
+
+        do {
+            System.out.println("-------------MENU-------------");
+            System.out.println("Digite a opção desejada: ");
+            System.out.println("1- Adicionar item à lista.");
+            System.out.println("2- Exibir lista.");
+            System.out.println("3- Remover um item.");
+            System.out.println("4- Sair.");
+            opcao = scanner.nextInt();
+            scanner.nextLine(); 
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Digite o item a ser adicionado à lista:");
+                    String item = scanner.nextLine();
+                    lista.add(item);
+                    System.out.println("Item adicionado à lista.");
+                    break;
+                case 2:
+                    System.out.println("------- Lista de Compras -------");
+                    for (String listItem : lista) {
+                        System.out.println("- " + listItem);
+                    }
+                    break;
+                case 3:
+                System.out.println("------- Lista de Compras -------");
+                for (String listItem : lista) {
+                    System.out.println("- " + listItem);
+                }
+                System.out.println("Qual item deseja remover?");
+                String itemRemover = scanner.nextLine();
+                    if(lista.remove(itemRemover)){
+
+                        System.out.println("Item removido!");
+
+                    }else{
+
+                        System.out.println("Item não encontrado!");
+
+                    }
+                    break;
+                case 4:
+                    System.out.println("Saindo do Supermarket. Até logo!");
+                    break;
+                default:
+                    System.out.println("Opção inválida. Digite novamente.");
+                    break;
+            }
+        } while (opcao != 4);
+
+        scanner.close();
+
+    }
+
+    public void ex07() {
+
         
 
     }
 }
+
